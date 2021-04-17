@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { width: 100%;;
+}
+body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+  background-image: url('./assets/bg2.png');
+  background-color: black;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+
+}
+
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+.header {
+  font-family: 'Charm', cursive;
+}
+
+
+
+.menu-link a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.menu-link .active {
+  color: #ffd618;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+
+/* effect-shine */
+.menu-link a:hover {
+  color: #ffd618;
+  cursor: pointer;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+

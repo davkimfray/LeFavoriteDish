@@ -1,0 +1,173 @@
+#break_fast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#break_fast .triangle {
+  background-image: url('../../assets/bg2.png');
+  background-color: black;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  pointer-events: none;
+}
+#break_fast .triangle.left {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+#break_fast .triangle.right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+#break_fast.open .triangle.left {
+  clip-path: polygon(0 0, 0 100%, 0 100%);
+}
+#break_fast.open .triangle.right {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%);
+}
+
+
+.half-circle {
+  width: 200px;
+  height: 100%;
+  background-color: gold;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.our-menu .intro-card-image {
+  position: absolute;
+  height: inherit;
+  right: 0;
+  background: #ffd618 url("../../assets/break_fast.jpg") center no-repeat;
+  background-size: cover;
+  clip-path: circle(50% at 80% 50%);
+}
+
+
+
+
+
+@media screen and (max-width: 480px) and (max-height: 740px) {
+
+}
+
+@media screen and (max-width: 480px) {
+   .our-menu .intro-card, .our-menu .intro-card-image, .our-menu .not-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+    .our-menu .intro-card {
+    background: #ffd618;
+    clip-path: circle(50% at 11% 45%);
+    height: 300px;
+  }
+
+  .our-menu .intro-card h1 {
+    font-size: 3vw;
+    font-weight: 800;
+  }
+
+  .our-menu .intro-card .sub-head p {
+    font-size: 16px;
+  }
+
+  .our-menu .intro-card .sub-head hr {
+    border: 1px solid #000000;
+    opacity: .5;
+  }
+
+  .our-menu .intro-card p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+
+  .our-menu .intro-card {
+    background: #ffd618;
+    clip-path: circle(50% at 11% 45%);
+    height: 350px;
+  }
+
+  .our-menu .intro-card h1 {
+    font-size: 6vw;
+    font-weight: 800;
+  }
+
+  .our-menu .intro-card .sub-head p {
+    font-size: 18px;
+  }
+
+  .our-menu .intro-card .sub-head hr {
+    border: 1px solid #000000;
+    opacity: .5;
+  }
+
+  .our-menu .intro-card p {
+    font-size: 16px;
+  }
+
+  .our-menu .mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+    .our-menu .intro-card {
+    background: #ffd618;
+    clip-path: circle(50% at 11% 45%);
+    height: 300px;
+  }
+
+  .our-menu .intro-card h1 {
+    font-size: 3vw;
+    font-weight: 800;
+  }
+
+  .our-menu .intro-card .sub-head p {
+    font-size: 16px;
+  }
+
+  .our-menu .intro-card .sub-head hr {
+    border: 1px solid #000000;
+    opacity: .5;
+  }
+
+  .our-menu .intro-card p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .our-menu .intro-card {
+    background: #ffd618;
+    clip-path: circle(50% at 11% 45%);
+    height: 450px;
+  }
+
+  .our-menu .intro-card h1 {
+    font-size: 3.5vw;
+    font-weight: 800;
+  }
+
+  .our-menu .intro-card .sub-head p {
+    font-size: 20px;
+  }
+
+  .our-menu .intro-card .sub-head hr {
+    border: 1px solid #000000;
+    opacity: .5;
+  }
+
+  .our-menu .intro-card p {
+    font-size: 18px;
+  }
+}
